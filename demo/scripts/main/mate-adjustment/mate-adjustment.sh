@@ -27,7 +27,7 @@ mod_mate_config_for_mouse_button_modifier () {
 	## ## Disable Super_L Open Menu
 	##
 
-	gsettings set com.solus-project.brisk-menu hot-key ''
+	#gsettings set com.solus-project.brisk-menu hot-key ''
 
 	#gsettings set com.linuxmint.mintmenu hot-key ''
 
