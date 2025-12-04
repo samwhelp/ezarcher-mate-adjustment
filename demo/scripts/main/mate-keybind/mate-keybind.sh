@@ -27,9 +27,9 @@ mod_mate_config_for_mouse_button_modifier () {
 	## ## Disable Super_L Open Menu
 	##
 
-	gsettings set com.linuxmint.mintmenu hot-key ''
+	gsettings set com.solus-project.brisk-menu hot-key ''
 
-	#gsettings set com.solus-project.brisk-menu hot-key ''
+	#gsettings set com.linuxmint.mintmenu hot-key ''
 
 
 	##
@@ -62,7 +62,7 @@ mod_mate_config_for_keybind_main () {
 
 
 	##
-	## ## Application / Launcher
+	## ## Launcher
 	##
 
 	gsettings set org.mate.Marco.global-keybindings panel-main-menu "'<Alt>F1'"
@@ -196,7 +196,6 @@ mod_mate_config_for_keybind_custom () {
 	dconf write /org/mate/desktop/keybindings/terminal/action "'mate-terminal'"
 	dconf write /org/mate/desktop/keybindings/terminal/binding "'<Alt>Return'"
 
-
 	## ### Terminal-1
 	dconf write /org/mate/desktop/keybindings/terminal-1/name "'Terminal-1'"
 	dconf write /org/mate/desktop/keybindings/terminal-1/action "'mate-terminal'"
@@ -211,13 +210,13 @@ mod_mate_config_for_keybind_custom () {
 
 	## ### File Manager-1
 	dconf write /org/mate/desktop/keybindings/file-manager-1/name "'File_Manager-1'"
-	dconf write /org/mate/desktop/keybindings/file-manager-1/action "'thunar'"
+	dconf write /org/mate/desktop/keybindings/file-manager-1/action "'pcmanfm-qt'"
 	dconf write /org/mate/desktop/keybindings/file-manager-1/binding "'<Shift><Alt>g'"
 
 
 	## ### Text Editor
 	dconf write /org/mate/desktop/keybindings/text-editor/name "'Text_Editor'"
-	dconf write /org/mate/desktop/keybindings/text-editor/action "'xed'"
+	dconf write /org/mate/desktop/keybindings/text-editor/action "'pluma'"
 	dconf write /org/mate/desktop/keybindings/text-editor/binding "'<Shift><Alt>e'"
 
 
